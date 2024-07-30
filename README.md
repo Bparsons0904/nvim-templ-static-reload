@@ -1,6 +1,8 @@
-# nvim-project-watch
+# nvim-templ-static-reload
 
 A Neovim plugin that triggers reloads when static files in Templ project is updated
+
+This works as a replacement for forcing reloads detailed in the [templ.guide]("https://templ.guide/commands-and-tools/live-reload-with-other-tools")
 
 ## Installation
 
