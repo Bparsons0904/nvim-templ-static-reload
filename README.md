@@ -10,7 +10,7 @@ Using `packer.nvim`:
 use {
     'Bparsons0904/nvim-templ-static-reload',
     config = function()
-        require('nvim-project-watch').setup()
+        require('nvim-templ-static-reload').setup()
     end
 }
 ```
@@ -21,7 +21,7 @@ Using `lazy.nvim`:
 return {
     'Bparsons0904/nvim-templ-static-reload',
     config = function()
-        require('nvim-project-watch').setup()
+        require('nvim-templ-static-reload').setup()
     end
 }
 ```
@@ -33,8 +33,8 @@ Add a `templ-reload.lua` to the root of the project.
 ```lua
 
 return {
-watch_direcorty = "/static/",
-update_file = "/cmd/main.go",
+    watch_direcorty = "/directory_to_watch/",
+    update_file = "/file_to_write_to", -- Can be any Go file within the project
 }
 
 ```
