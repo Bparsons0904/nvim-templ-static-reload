@@ -35,8 +35,8 @@ Add a `templ-reload.lua` to the root of the project.
 ```lua
 
 return {
-    watch_direcorty = "/directory_to_watch/",
-    update_file = "/file_to_write_to", -- Can be any Go file within the project
+    trigger_files = { "css", "js" },  -- List of file extensions to trigger actions
+    update_file = "/cmd/main.go",      -- Can be any Go file within the project
 }
 
 ```
